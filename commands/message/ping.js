@@ -27,7 +27,7 @@ module.exports = {
             const seconds = uptimeSeconds % 60;
 
             const embed = new EmbedBuilder()
-                .setTitle('📡 Pong!')
+                .setTitle('📡 Ping!')
                 .setColor(0x1DB954)
                 .setDescription(
                     `• **Latency:** ${latency} ms\n` +
@@ -35,7 +35,7 @@ module.exports = {
                     `• **Uptime:** ${hours}h ${minutes}m ${seconds}s`
                 )
                 .setTimestamp()
-                .setFooter({ text: 'Ultimate Music Bot • Developed by GlaceYT' });
+                .setFooter({ text: 'MuseWave • Developed by Mayukh Adhikary' });
 
             await message.reply({ embeds: [embed] });
         } catch (error) {
@@ -44,3 +44,4 @@ module.exports = {
         }
     }
 };
+
